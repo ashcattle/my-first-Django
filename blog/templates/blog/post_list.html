@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Live Streaming!</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href=''>Suntech Live Streaming</a></h1>
+        </div>
+
+        {% for post in posts %}
+        <div>
+            <p>{{ post.published_date }}</p>
+            <p><a href=''>{{ post.title }}</a></p>
+            <p>{{ post.text | linebreaksbr }}</p>
+        </div>
+        {% endfor %}
+    </body>
+</html>
